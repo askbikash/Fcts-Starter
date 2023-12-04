@@ -1,0 +1,11 @@
+/* slider css */
+
+.carousel-inner img{
+  height: 500px;
+}
+
+
+/* service css */
+#services{
+  padding: 60px 0;
+}
