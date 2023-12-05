@@ -30,8 +30,25 @@ span {
   margin-right: 0.5rem;
 }
 
-.navbar{
+.navbar {
   background: #fff !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.navbar-nav .nav-item .nav-link{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.social-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon i{
+  margin-right: 1rem;
 }
 
 /* slider css */
@@ -151,4 +168,103 @@ span {
   font-size: 13px;
   font-weight: 300;
   color: #999999;
+}
+
+
+/* testimonials section */
+
+.testimonials {
+  padding: 30px 0;
+}
+
+.card {
+  border: none;
+}
+
+.user-content p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.ratings i {
+  color: blue;
+}
+
+
+
+/* footer css starts here */
+
+.footer {
+  color: #fff;
+  padding: 60px 0;
+  background: rgb(254, 181, 43);
+  background: linear-gradient(90deg, rgba(254, 181, 43, 1) 0%, rgba(255, 175, 0, 1) 35%, rgba(255, 141, 18, 1) 100%);
+  border-radius: 200px 0px 0px 0px;
+}
+
+@media(max-width:776px) {
+  .footer{
+    border-radius: 100px 0px 0px 0px;
+  }
+
+  .carousel-inner img {
+    height: 250px;
+  }
+}
+
+.footer-heading {
+  font-weight: 700;
+}
+
+.text-grey {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-para {
+  line-height: 1.75rem;
+  margin-bottom: 0;
+}
+
+.social-icons {
+  margin-left: 35px;
+}
+
+.footer-li {
+  font-size: 1.1rem;
+}
+
+.footer-ul {
+  margin-left: -30px;
+}
+
+.footer-ul .footer-li {
+  list-style: none;
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.footer-ul .footer-li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+.last-footer {
+  border-top: 1px dotted #dbdbdb;
+  background: rgb(254, 181, 43);
+  background: linear-gradient(90deg, rgba(254, 181, 43, 1) 0%, rgba(255, 175, 0, 1) 35%, rgba(255, 141, 18, 1) 100%);
+  color: #fff;
+  padding: 15px 0;
+}
+
+.copy-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 0.8rem;
 }
