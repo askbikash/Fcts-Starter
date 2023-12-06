@@ -96,13 +96,13 @@ span {
 }
 
 .demo {
-  width: 80%;
-  height: 300px;
+  width: 100%;
+  height: 400px;
   transition: transform .3s;
 }
 
 .demo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .text-img {
@@ -110,6 +110,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .third-para {
