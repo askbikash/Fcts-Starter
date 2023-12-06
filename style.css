@@ -27,6 +27,25 @@ ul li a:hover {
   font-size: 0.9rem;
 }
 
+@media(max-width:776px) {
+  .contact-info li a {
+    font-size: 0.65rem;
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+  }
+}
+
 
 .contact-info li {
   margin-right: 2rem;
@@ -45,8 +64,12 @@ span {
 
 .navbar-nav .nav-item .nav-link {
   font-size: 1rem;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-right: 2rem;
+}
+
+li:active {
+  font-weight: 600;
 }
 
 .dropdown-menu {
@@ -71,6 +94,19 @@ span {
 
 .social-icon i {
   margin-right: 1rem;
+}
+
+
+.navbar-toggler{
+  border: none;
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /* slider css */
