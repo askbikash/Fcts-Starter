@@ -46,6 +46,10 @@ ul li a:hover {
   }
 }
 
+.social-icon img {
+  margin-right: 1rem;
+}
+
 
 .contact-info li {
   margin-right: 2rem;
@@ -97,7 +101,7 @@ li:active {
 }
 
 
-.navbar-toggler{
+.navbar-toggler {
   border: none;
 }
 
@@ -110,10 +114,6 @@ li:active {
 }
 
 /* slider css */
-
-.carousel-inner img {
-  height: 650px;
-}
 
 
 /* service css */
@@ -150,7 +150,7 @@ li:active {
 }
 
 .third-para {
-  margin: 20px;
+  margin-bottom: 0;
 }
 
 /* @media(max-width:776px) {
@@ -248,8 +248,8 @@ li:active {
 
 .carousel-control-next-icon {
   background-color: var(--primary-color);
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
@@ -259,8 +259,8 @@ li:active {
 
 .carousel-control-prev-icon {
   background-color: var(--primary-color);
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
