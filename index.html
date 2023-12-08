@@ -9,6 +9,11 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    .lock-scroll {
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
@@ -38,7 +43,7 @@
     <div class="container">
       <nav>
         <a href="index.html"><img height="60" width="60" src="Images/logo.webp" alt="logo"></a>
-        <div class="menu-toggle">
+        <div class="menu-toggle" onclick="lockScroll();">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -558,6 +563,11 @@
       offset: 400,
       duration: 1000
     });
+
+
+    function lockScroll() {
+      document.body.classList.toggle('lock-scroll');
+    }
   </script>
 </body>
 
