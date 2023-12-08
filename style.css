@@ -36,12 +36,6 @@ ul li a:hover {
     font-size: 0.65rem;
   }
 
-  .contact-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .social-icon {
     display: flex;
     align-items: center;
@@ -50,10 +44,16 @@ ul li a:hover {
   }
 }
 
-@media(max-width:1000px) {
-  .social-icon {
+@media(max-width:992px) {
+
+  .contact-info {
+    display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .social-icon {
+    justify-content: center !important;
     margin-bottom: 10px;
   }
 }
