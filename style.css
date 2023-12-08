@@ -6,6 +6,10 @@ ul li a:hover {
   text-decoration: underline;
 }
 
+/* .container {
+  overflow: hidden;
+} */
+
 /* header top */
 .header-top {
   background: var(--primary-color);
@@ -43,6 +47,14 @@ ul li a:hover {
     align-items: center;
     justify-content: center;
     margin-bottom: 0.6rem;
+  }
+}
+
+@media(max-width:1000px) {
+  .social-icon {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
   }
 }
 
@@ -179,6 +191,12 @@ nav {
     left: 0;
     width: 100%;
     background-color: #fff;
+    padding-left: 0;
+    height: 100vh;
+  }
+
+  .submenu {
+    position: static;
   }
 
   .menu.active {
@@ -187,7 +205,7 @@ nav {
 
   .menu>li {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .menu-toggle {
@@ -203,12 +221,15 @@ nav {
   /* Show submenu on toggle */
   .menu li.active>.submenu {
     display: block;
+    margin-left: 50px;
   }
 
   .submenu li.active>.submenu2 {
     display: block;
   }
+
 }
+
 
 
 
@@ -257,7 +278,7 @@ nav {
   margin-right: 1rem;
 }
 
-
+/* 
 .navbar-toggler {
   border: none;
 }
@@ -268,7 +289,7 @@ nav {
 .navbar-toggler-icon:focus {
   outline: none;
   box-shadow: none;
-}
+} */
 
 /* slider css */
 
@@ -285,7 +306,7 @@ nav {
 /* section-3 */
 
 #section-3 {
-  padding: 50px 0;
+  padding: 50px 6px;
 }
 
 .demo {
@@ -438,16 +459,6 @@ nav {
   font-size: 10px;
 }
 
-/* .carousel-myimage img {
-  height: 80px;
-  width: 80px;
-}
-
-@media(max-width:776px) {
-  .carousel-myimage img {
-    width: 250px;
-  }
-} */
 
 /* footer css starts here */
 
@@ -458,12 +469,6 @@ nav {
   background: linear-gradient(90deg, rgba(254, 181, 43, 1) 0%, rgba(255, 175, 0, 1) 35%, rgba(255, 141, 18, 1) 100%);
   /* border-radius: 200px 0px 0px 0px; */
 }
-
-/* @media(max-width:776px) {
-  .carousel-inner img {
-    height: 260px;
-  }
-} */
 
 .footer-heading {
   font-weight: 700;
