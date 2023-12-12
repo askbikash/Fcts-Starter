@@ -12,7 +12,8 @@ ul li a:hover {
 }
 
 .myBreadcrumb {
-  padding: 20px 0;
+  /* background-image: url(Images/breadcrump-background.jpeg); */
+  padding: 40px 0;
 }
 
 /* header top */
@@ -510,4 +511,25 @@ nav {
 
 .copyright {
   font-size: 0.8rem;
+}
+
+
+/* about us page css for our team  */
+
+.ourTeam {
+  padding: 40px 0;
+}
+
+.ourTeam .dp {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.myicons img {
+  width: 20px;
+  margin: 10px;
 }
