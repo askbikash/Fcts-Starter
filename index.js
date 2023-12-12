@@ -1,5 +1,15 @@
 // javascript for toggle
 
+const menuItems = document.querySelectorAll('.menu li');
+
+for (const menuItem of menuItems) {
+  menuItem.addEventListener('click', function (event) {
+    if (!event.target.closest('.submenu') && !event.target.closest('.submenu2')) {
+      this.classList.remove('active');
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   // Get the menu toggle button and menu
   var menuToggle = document.querySelector('.menu-toggle');
@@ -40,10 +50,15 @@ document.addEventListener("DOMContentLoaded", function () {
       event.stopPropagation();
     });
   });
-});
+  document.querySelector('.menu').addEventListener('click', function (event) {
+    if (event.target.closest('.submenu') || event.target.closest('.submenu2')) {
+      // Prevent the click from closing the entire menu
+      event.stopPropagation();
+    } else {
+      // Close the menu if clicked outside of a submenu
+      this.classList.remove('active');
+    }
+  });
 
-
-document.querySelector('.menu').addEventListener('click', function (event) {
-  event.stopPropagation();
 });
 
