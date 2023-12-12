@@ -1,5 +1,4 @@
-
-// javascript for toggle 
+// javascript for toggle
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get the menu toggle button and menu
