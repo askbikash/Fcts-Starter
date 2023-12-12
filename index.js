@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add click event listener to each submenu item
   submenuItems.forEach(function (submenuItem) {
     submenuItem.addEventListener('click', function (event) {
-      // Prevent the submenu from closing when clicking on it
       event.stopPropagation();
     });
   });
@@ -47,3 +46,4 @@ document.addEventListener("DOMContentLoaded", function () {
 document.querySelector('.menu').addEventListener('click', function (event) {
   event.stopPropagation();
 });
+
