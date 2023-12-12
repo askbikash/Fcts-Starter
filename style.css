@@ -11,6 +11,10 @@ ul li a:hover {
   width: 150px;
 }
 
+.myBreadcrumb {
+  padding: 20px 0;
+}
+
 /* header top */
 .header-top {
   background: var(--primary-color);
@@ -310,7 +314,8 @@ nav {
 
 /* contact us page css */
 .contact {
-  padding: 70px 0;
+  padding: 20px 0;
+  padding-bottom: 50px;
 }
 
 .contact .heading h2 {
