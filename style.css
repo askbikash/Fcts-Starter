@@ -292,6 +292,10 @@ nav {
   transition: transform .9s;
 }
 
+.ourService {
+  text-align: justify;
+}
+
 .demo:hover {
   transform: scale(1.1);
 }
@@ -400,7 +404,7 @@ nav {
 
 .testimonials {
   padding: 50px 0;
-  /* background: #000; */
+
 }
 
 .carousel-control-next-icon {
@@ -421,12 +425,12 @@ nav {
   border-radius: 50%;
 }
 
-.carousel-control-prev {
-  color: black;
-}
-
 .card {
   border: none;
+}
+
+.carousel-control-prev {
+  color: black;
 }
 
 .user-content p {
@@ -437,7 +441,6 @@ nav {
 .ratings img {
   font-size: 10px;
 }
-
 
 /* footer css starts here */
 
