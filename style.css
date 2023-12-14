@@ -12,8 +12,23 @@ ul li a:hover {
 }
 
 .myBreadcrumb {
-  /* background-image: url(Images/breadcrump-background.jpeg); */
+  background: url('Images/breadcrump-background.jpeg');
+  background-color: black;
+  /* opacity: 0.5; */
+  z-index: 0;
   padding: 40px 0;
+}
+
+.myCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcrumb .breadcrumb-item {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
 }
 
 /* header top */
@@ -524,8 +539,8 @@ nav {
 }
 
 .ourTeam .dp {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
   display: block;
   margin-left: auto;
