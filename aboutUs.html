@@ -117,10 +117,115 @@
     </section>
   </section>
 
-  <section class="ourTeam">
+
+  <!-- our journey section starts here  -->
+
+  <section class="journey">
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="steps">
+          <progress id="progress" value=0 max=100></progress>
+          <div class="step-item">
+            <button class="step-button text-center" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              1
+            </button>
+            <div class="step-title">
+              First Step
+            </div>
+          </div>
+          <div class="step-item">
+            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              2
+            </button>
+            <div class="step-title">
+              Second Step
+            </div>
+          </div>
+          <div class="step-item">
+            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              3
+            </button>
+            <div class="step-title">
+              Third Step
+            </div>
+          </div>
+          <div class="step-item">
+            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              4
+            </button>
+            <div class="step-title">
+              Fourth Step
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div id="headingOne">
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="card-body">
+              <h2>Year XXXX</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quibusdam, possimus nemo quo
+                molestias accusamus a saepe nulla sed voluptas, dolorem beatae esse iusto exercitationem ratione
+                necessitatibus? Molestias sed rem magnam. Omnis asperiores voluptate odit porro ipsa veritatis quibusdam
+                a quo, odio mollitia explicabo assumenda labore alias ab molestiae inventore modi eius voluptates iste
+                cum officia! Totam dignissimos nesciunt porro.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div id="headingTwo">
+
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="card-body">
+              <h2>Year XXXX</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reiciendis at quas quam excepturi,
+                unde error consectetur, facere adipisci id, neque beatae magnam perferendis esse ullam! Mollitia
+                doloremque optio dicta!</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div id="headingThree">
+
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="card-body">
+              <h2> Year XXXX</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quam quas. Ratione veritatis quasi
+                repellendus, laboriosam nihil aliquid a, exercitationem cum sit velit ut. Aut molestiae sed harum eaque
+                alias voluptatibus maiores quo velit reprehenderit nemo optio, natus quos quaerat magni nobis eos sint
+                neque totam iure eligendi soluta. Cum!</p>
+            </div>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="card-body">
+              <h2> Year XXXX</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quam quas. Ratione veritatis quasi
+                repellendus, laboriosam nihil aliquid a, exercitationem cum sit velit ut. Aut molestiae sed harum eaque
+                alias voluptatibus maiores quo velit reprehenderit nemo optio, natus quos quaerat magni nobis eos sint
+                neque totam iure eligendi soluta. Cum!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our journey section ends here  -->
+
+  <!-- our team section starts here  -->
+
+  <section class="ourTeam overflow-hidden">
     <div class="container">
       <h1 class="mb-5 text-center">Our Team</h1>
-      <div class="row">
+      <div class="row" data-aos="fade-up">
         <div class="col-lg-3 mb-5">
           <img class="dp" src="Images/pic1.jpg" alt="">
           <h4 class="text-center mt-2">Name 1</h4>
@@ -204,9 +309,12 @@
       </div>
     </div>
   </section>
-  <div class="container">
+
+
+  <div class="container overflow-hidden">
     <h1 class="text-center m-4">Our Services</h1>
-    <p class="ourService mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ea ipsam ducimus
+    <p class="ourService mb-5" data-aos="zoom-out">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
+      ea ipsam ducimus
       consequuntur a id necessitatibus quasi iusto? Iusto ratione qui ea laborum aliquam mollitia veritatis possimus
       sapiente animi iste quia, esse, excepturi id quis, labore perspiciatis. Nostrum animi explicabo dolore vero
       corrupti repellat deleniti, veniam, at cumque, amet hic eligendi a nihil beatae tenetur neque quasi. Repudiandae
@@ -354,6 +462,24 @@
       offset: 150,
       duration: 1000
     });
+
+    const stepButtons = document.querySelectorAll('.step-button');
+    const progress = document.querySelector('#progress');
+
+    Array.from(stepButtons).forEach((button, index) => {
+      button.addEventListener('click', () => {
+        progress.setAttribute('value', index * 100 / (stepButtons.length - 1));//there are 3 buttons. 2 spaces.
+
+        stepButtons.forEach((item, secindex) => {
+          if (index > secindex) {
+            item.classList.add('done');
+          }
+          if (index < secindex) {
+            item.classList.remove('done');
+          }
+        })
+      })
+    })
   </script>
 </body>
 
