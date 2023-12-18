@@ -102,7 +102,7 @@ ul li a:hover {
   font-size: 0.85rem;
 }
 
-span {
+.contact-span {
   margin-right: 0.5rem;
 }
 
@@ -440,8 +440,8 @@ nav {
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: var(--secondary-color);
   border-radius: 50%;
   position: absolute;
@@ -596,6 +596,14 @@ nav {
   width: 20px;
   margin: 10px;
   cursor: pointer;
+}
+
+.para-about {
+  text-align: justify;
+}
+
+p {
+  text-align: justify;
 }
 
 /* our journey section css  */
