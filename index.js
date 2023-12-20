@@ -1,63 +1,65 @@
-// javascript for toggle
-
-const menuItems = document.querySelectorAll('.menu li');
-
-for (const menuItem of menuItems) {
-  menuItem.addEventListener('click', function (event) {
-    if (!event.target.closest('.submenu') && !event.target.closest('.submenu2')) {
-      this.classList.remove('active');
-    }
-  });
+function lockScroll() {
+  document.body.classList.toggle('lock-scroll');
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Get the menu toggle button and menu
-  var menuToggle = document.querySelector('.menu-toggle');
-  var menu = document.querySelector('.menu');
+document.addEventListener('DOMContentLoaded', function () {
+  var currentPage = window.location.pathname;
 
-  // Toggle the 'active' class on click
-  menuToggle.addEventListener('click', function () {
-    menu.classList.toggle('active');
-  });
+  // Handle the case where the current page is the homepage
+  if (currentPage === '/') {
+    currentPage = '/index.html';
+  }
 
-  // Get all menu items
-  var menuItems = document.querySelectorAll('.menu li');
+  var navLinks = document.querySelectorAll('.nav__menu a');
 
-  // Add click event listener to each menu item
-  menuItems.forEach(function (menuItem) {
-    menuItem.addEventListener('click', function (event) {
-      // Remove "active" class from all menu items
-      menuItems.forEach(function (item) {
-        item.classList.remove('active');
-      });
+  for (var i = 0; i < navLinks.length; i++) {
+    var link = navLinks[i];
 
-      // Add "active" class to the clicked menu item
-      menuItem.classList.add('active');
-
-      // If the menu is open (on small screens), close it
-      if (menu.classList.contains('active')) {
-        menu.classList.remove('active');
-      }
-    });
-  });
-
-  // Get all submenu items
-  var submenuItems = document.querySelectorAll('.submenu a');
-
-  // Add click event listener to each submenu item
-  submenuItems.forEach(function (submenuItem) {
-    submenuItem.addEventListener('click', function (event) {
-      event.stopPropagation();
-    });
-  });
-  document.querySelector('.menu').addEventListener('click', function (event) {
-    if (event.target.closest('.submenu') || event.target.closest('.submenu2')) {
-      // Prevent the click from closing the entire menu
-      event.stopPropagation();
-    } else {
-      // Close the menu if clicked outside of a submenu
-      this.classList.remove('active');
+    // Check for partial match
+    if (currentPage.indexOf(link.getAttribute('href')) !== -1) {
+      link.parentElement.classList.add('active');
     }
-  });
+  }
+});
 
+// Prevent showing animation on window resize
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+
+
+// Menu toogle on mobile
+const navToggle = document.querySelector('.nav-toggle');
+const menuToggle = document.querySelector('.menu-toggle');
+
+navToggle.addEventListener('click', function (e) {
+  this.classList.toggle('open');
+  menuToggle.classList.toggle('active');
+  e.stopPropagation();
+});
+
+
+
+// Dropdown toogle on mobile
+const dropdown = document.querySelector('.dropdown a');
+
+dropdown.addEventListener('click', function (e) {
+  this.nextElementSibling.classList.toggle('show');
+  this.parentNode.classList.toggle('active');
+  e.stopPropagation();
+});
+
+
+// Second level dropdown toggle on mobile
+const deepDropdown = document.querySelector('.second-level a');
+
+deepDropdown.addEventListener('click', function (e) {
+  this.nextElementSibling.classList.toggle('show');
+  this.parentNode.classList.toggle('active');
+  e.stopPropagation();
 });
