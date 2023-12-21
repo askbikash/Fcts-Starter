@@ -538,13 +538,14 @@ ul li a:hover {
   transition: transform .9s;
 }
 
+.demo:hover {
+  transform: scale(1.1);
+}
+
 .ourService {
   text-align: justify;
 }
 
-.demo:hover {
-  transform: scale(1.1);
-}
 
 .text-img {
   /* padding: 30px 0; */
