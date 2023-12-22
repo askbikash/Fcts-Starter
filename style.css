@@ -93,6 +93,7 @@ ul li a:hover {
 
 .social-icon img {
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 
