@@ -661,8 +661,8 @@ ul li a:hover {
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-color: var(--primary-color);
   border-radius: 50%;
   position: absolute;
@@ -854,6 +854,21 @@ p {
   margin-left: 18px;
   margin-bottom: 18px;
 }
+
+
+@media (max-width: 768px) {
+
+  #progress {
+    width: 86%;
+  }
+}
+
+@media (max-width: 332px){
+  #progress {
+    margin-bottom: 42px;
+  }
+}
+
 
 /* to customize progress bar */
 #progress::-webkit-progress-value {
