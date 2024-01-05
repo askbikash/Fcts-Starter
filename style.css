@@ -280,8 +280,8 @@ ul li a:hover {
 }
 
 .nav__menu .dropdown>a:after {
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
+  content: url('Images/chevron-down.svg');
+  /* font-family: "Font Awesome 5 Free"; */
   font-weight: 900;
   font-size: .875rem;
   padding-left: 5px;
@@ -289,12 +289,12 @@ ul li a:hover {
 }
 
 .nav__menu .active.dropdown>a:after {
-  content: "\f106";
+  content: url('Images/chevron-up.svg');
 }
 
 .nav__menu .dropdown .dropdown>a:after {
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
+  content: url('Images/chevron-down.svg');
+  /* font-family: "Font Awesome 5 Free"; */
   font-weight: 900;
   font-size: .875rem;
   padding-left: 5px;
@@ -302,7 +302,7 @@ ul li a:hover {
 }
 
 .nav__menu .dropdown .active.dropdown>a:after {
-  content: "\f106";
+  content: url('Images/chevron-up.svg');
 }
 
 
@@ -437,7 +437,7 @@ ul li a:hover {
   }
 
   .nav__menu .dropdown>a:after {
-    content: "\f107";
+    content: url('Images/chevron-down.svg');
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: .875rem;
@@ -447,7 +447,7 @@ ul li a:hover {
 
 
   .nav__menu .dropdown:hover>a:after {
-    content: "\f106";
+    content: url('Images/chevron-up.svg');
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: .875rem;
@@ -458,7 +458,7 @@ ul li a:hover {
 
 
   .nav__menu .dropdown .dropdown>a:after {
-    content: "\f105";
+    content: url('Images/chevron-down.svg');
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: .875rem;
@@ -469,7 +469,7 @@ ul li a:hover {
 
 
   .nav__menu .dropdown .dropdown:hover>a:after {
-    content: "\f104";
+    content: url('Images/chevron-left.svg');
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: .875rem;
