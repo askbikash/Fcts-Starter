@@ -714,6 +714,11 @@ ul li a:hover {
   font-weight: 700;
 }
 
+.footer-img{
+  width: 220px;
+  height: 60px;
+}
+
 .text-grey {
   text-decoration: none;
   color: var(--white-color);
