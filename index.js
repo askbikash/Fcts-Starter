@@ -63,3 +63,30 @@ deepDropdown.addEventListener('click', function (e) {
   this.parentNode.classList.toggle('active');
   e.stopPropagation();
 });
+
+
+
+// js for version 2 hero section 
+
+document.addEventListener('DOMContentLoaded', function () {
+  var indicators = document.querySelectorAll('.custom-indicator');
+  var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleControls'));
+
+  indicators.forEach(function (indicator, index) {
+    indicator.addEventListener('click', function () {
+      carousel.to(index);
+    });
+  });
+
+  document.getElementById('carouselExampleControls').addEventListener('slid.bs.carousel', function (event) {
+    var activeIndex = event.to;
+
+    indicators.forEach(function (indicator, index) {
+      if (index === activeIndex) {
+        indicator.classList.add('active');
+      } else {
+        indicator.classList.remove('active');
+      }
+    });
+  });
+});

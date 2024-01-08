@@ -41,7 +41,7 @@
     </div>
   </section>
 
-  <header class="header">
+  <header class="header mt-0">
     <div class="container">
       <div class="nav__container">
         <div class="nav__mobile">
@@ -734,7 +734,7 @@
 
   <!-- verion 2 hero section starts here  -->
 
-  <section class="hero-2">
+  <!-- <section class="hero-2">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-auto">
@@ -748,6 +748,9 @@
               <div class="carousel-item active">
                 <div class="row align-items-center">
                   <div class="col-md">
+                    <img class="d-block img-fluid" src="Images/slider-v-2-1.png" alt="First slide">
+                  </div>
+                  <div class="col-md">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, ea dolorem ipsam nemo
                       illum
                       beatae adipisci numquam mollitia omnis quod quasi! Nisi asperiores ipsa itaque iste voluptas
@@ -755,13 +758,13 @@
                       dignissimos maxime?</p>
                     <button class="btn btn-warning mb-3">More</button>
                   </div>
-                  <div class="col-md">
-                    <img class="d-block img-fluid" src="Images/slider-v-2-1.png" alt="First slide">
-                  </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="row align-items-center">
+                  <div class="col-md">
+                    <img class="d-block img-fluid" src="Images/slider-v-2-2png.png" alt="2nd slide">
+                  </div>
                   <div class="col-md">
                     <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quasi similique beatae iusto
                       nulla
@@ -769,21 +772,18 @@
                       necessitatibus voluptas aperiam vitae repudiandae! </p>
                     <button class="btn btn-warning mb-3">More</button>
                   </div>
-                  <div class="col-md">
-                    <img class="d-block img-fluid" src="Images/slider-v-2-2png.png" alt="2nd slide">
-                  </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="row align-items-center">
                   <div class="col-md">
+                    <img class="d-block img-fluid" src="Images/slider-v-2-3.png" alt="3rd slide">
+                  </div>
+                  <div class="col-md">
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima, nostrum animi aut
                       repellendus, magnam fuga, provident cupiditate eveniet sed dignissimos voluptatum adipisci eos
                       impedit quia! Deleniti neque id est! </p>
                     <button class="btn btn-warning mb-3">More</button>
-                  </div>
-                  <div class="col-md">
-                    <img class="d-block img-fluid" src="Images/slider-v-2-3.png" alt="3rd slide">
                   </div>
                 </div>
               </div>
@@ -794,6 +794,72 @@
           <a class="h1" href="#carouselExampleControls" role="button" data-bs-slide="next">
             <span><img width="40" height="40" src="Images/chevron-right.svg" alt=""></span>
           </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="hero-2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- First carousel item content -->
+                <div class="row align-items-center">
+                  <div class="col-md">
+                    <img class="d-block img-fluid" src="Images/slider-v-2-1.png" alt="First slide">
+                  </div>
+                  <div class="col-md">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, ea dolorem ipsam nemo
+                      illum
+                      beatae adipisci numquam mollitia omnis quod quasi! Nisi asperiores ipsa itaque iste voluptas
+                      numquam
+                      dignissimos maxime?</p>
+                    <button class="btn btn-warning mb-3">More</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!-- Second carousel item content -->
+                <div class="row align-items-center">
+                  <div class="col-md">
+                    <img class="d-block img-fluid" src="Images/slider-v-2-2png.png" alt="2nd slide">
+                  </div>
+                  <div class="col-md">
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quasi similique beatae iusto
+                      nulla
+                      dolorem nostrum. Temporibus ipsa cupiditate, in voluptates, magni reprehenderit, ratione laborum
+                      necessitatibus voluptas aperiam vitae repudiandae! </p>
+                    <button class="btn btn-warning mb-3">More</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!-- Third carousel item content -->
+                <div class="row align-items-center">
+                  <div class="col-md">
+                    <img class="d-block img-fluid" src="Images/slider-v-2-3.png" alt="3rd slide">
+                  </div>
+                  <div class="col-md">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima, nostrum animi aut
+                      repellendus, magnam fuga, provident cupiditate eveniet sed dignissimos voluptatum adipisci eos
+                      impedit quia! Deleniti neque id est! </p>
+                    <button class="btn btn-warning mb-3">More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="custom-indicators pt-3">
+              <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="custom-indicator active"
+                onclick="goToSlide(0)"></li>
+              <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1" class="custom-indicator"
+                onclick="goToSlide(1)"></li>
+              <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2" class="custom-indicator"
+                onclick="goToSlide(2)"></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -888,8 +888,30 @@ p {
 
 }
 
-/* version 2 here css starts here  */
+/* version 2 hero css starts here  */
 
 .hero-2 {
   padding: 40px 0;
+}
+
+/* Custom styles for the circles */
+.custom-indicators {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.custom-indicator {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.custom-indicator.active {
+  background-color: var(--secondary-color);
 }
