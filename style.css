@@ -125,12 +125,12 @@ ul li a:hover {
   }
 
   .nav__container {
-    padding: 10px;
+    padding: 10px 0;
   }
 }
 
 
-.header-bottom {
+.header {
   width: 100%;
   background-color: var(--white-color);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
@@ -518,7 +518,7 @@ ul li a:hover {
 
 
 /* service css */
-#services {
+.services {
   padding: 60px 0;
 }
 
@@ -528,7 +528,7 @@ ul li a:hover {
 
 /* section-3 */
 
-#section-3 {
+.image-text {
   padding: 50px 0px;
 }
 
@@ -714,7 +714,7 @@ ul li a:hover {
   font-weight: 700;
 }
 
-.footer-img{
+.footer-img {
   width: 220px;
   height: 60px;
 }
@@ -761,7 +761,7 @@ ul li a:hover {
 }
 
 
-.last-footer {
+.footer-bottom {
   border-top: 1px dotted var(--grey-color);
   background: var(--primary-color);
   background: linear-gradient(90deg, rgba(254, 181, 43, 1) 0%, rgba(255, 175, 0, 1) 35%, rgba(255, 141, 18, 1) 100%);
@@ -769,7 +769,7 @@ ul li a:hover {
   padding: 15px 0;
 }
 
-.copy-parent {
+.footer-copyright {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -888,6 +888,6 @@ p {
 
 /* version 2 here css starts here  */
 
-.version-2-hero {
+.hero-2 {
   padding: 40px 0;
 }
