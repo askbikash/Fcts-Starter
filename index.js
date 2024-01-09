@@ -90,3 +90,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+
+// Header fixed problem solution
+
+document.addEventListener("DOMContentLoaded", function () {
+  var header = document.querySelector('.header');
+  var headerTop = document.querySelector('.header-top');
+
+  var headerTopHeight = headerTop.offsetHeight;
+
+  function updateHeader() {
+    if (window.scrollY >= headerTopHeight) {
+      header.classList.add('fixed-top');
+    } else {
+      header.classList.remove('fixed-top');
+    }
+  }
+
+  // Initial update
+  updateHeader();
+
+  // Listen for scroll events
+  window.addEventListener('scroll', updateHeader);
+});
+

@@ -9,6 +9,10 @@
   --black-transparent: rgba(0, 0, 0, .2);
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 ul li a:hover {
   text-decoration: underline;
 }
@@ -134,10 +138,17 @@ ul li a:hover {
   width: 100%;
   background-color: var(--white-color);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   z-index: 10000;
 }
+
+.header.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 
 .nav__container {
   /* background-color: rgb(255, 31, 31); */
